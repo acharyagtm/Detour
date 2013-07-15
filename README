@@ -1,2 +1,8 @@
-Test Github.
-test
+Setting up the project.
+
+right click -> PyDev -> set as PyDev Project
+right click -> Django -> set as Django Project
+right click -> properties -> source folders -> add source folder -> select project folder
+properties -> string substitution variables -> add variable -> 
+  1. DJANGO_MANAGE_LOCATION / manage.py
+  2. DJANGO_MANAGE_MODULE / Detour.settings
