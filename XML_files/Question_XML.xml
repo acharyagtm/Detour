@@ -1,0 +1,137 @@
+<questionnaire name="IOE_Sample" version="0" RevisionNo="1" PublishType="T">
+  <fieldset>
+    <module name="IOE_m1" display="ioem1" code="470">
+      <controls>
+        <input ref="QN_470_0" required="False" abbr="name">
+          <label>What is your name ?</label>
+          <hint>full name</hint>
+        </input>
+        <textarea ref="QN_470_1" required="False" abbr="addr">
+          <label>Address ?</label>
+          <hint>full address</hint>
+        </textarea>
+        <numeric ref="QN_470_2" required="False" digits="2" decimal="2" from="1" to="99" unit="Year" abbr="age">
+          <label>Age</label>
+          <hint />
+        </numeric>
+        <select1 ref="QN_470_3" required="False" other="True" abbr="gend">
+          <label>Gender</label>
+          <hint>g</hint>
+          <item>
+            <label>Male</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Female</label>
+            <value>2</value>
+          </item>
+        </select1>
+        <radiobutton ref="QN_470_4" required="False" other="True" abbr="nat">
+          <label>Nationality</label>
+          <hint />
+          <item>
+            <label>Nepali</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>Indian</label>
+            <value>2</value>
+          </item>
+        </radiobutton>
+        <select ref="QN_470_5" required="False" other="True" abbr="hob">
+          <label>Hobbies</label>
+          <hint />
+          <item>
+            <label>music</label>
+            <value>1</value>
+          </item>
+          <item>
+            <label>swimming</label>
+            <value>2</value>
+          </item>
+          <item>
+            <label>dancing</label>
+            <value>3</value>
+          </item>
+        </select>
+        <datetime ref="QN_470_6" required="False" abbr="dob">
+          <label>Date of birth</label>
+          <hint />
+        </datetime>
+        <location ref="QN_470_7" required="False" abbr="loc">
+          <label>Current location</label>
+          <hint />
+        </location>
+      </controls>
+      <skip />
+    </module>
+    <module name="IOE_m2" display="ioem2" code="471">
+      <controls>
+        <group ref="QN_471_0" required="False" abbr="gq">
+          <label>Group question</label>
+          <hint />
+          <subgroup>
+            <input ref="QN_471_0_0" required="False" abbr="fname">
+              <label>Fathers name</label>
+              <hint />
+            </input>
+          </subgroup>
+          <subgroup>
+            <numeric ref="QN_471_0_1" required="False" digits="10" decimal="2" from="" to="" unit="%" abbr="fage">
+              <label>Fathers Age</label>
+              <hint />
+            </numeric>
+          </subgroup>
+        </group>
+      </controls>
+      <skip />
+    </module>
+    <module name="IOE_m3" display="ioem3" code="472">
+      <controls>
+        <matrix ref="QN_472_0" required="False" abbr="matrix">
+          <label>Matrix m</label>
+          <hint />
+          <matrixrow>
+            <item ref="QN_472_0_0">
+              <label>Maths</label>
+            </item>
+            <item ref="QN_472_0_1">
+              <label>Science</label>
+            </item>
+            <item ref="QN_472_0_2">
+              <label>English</label>
+            </item>
+            <item ref="QN_472_0_3">
+              <label>Nepali</label>
+            </item>
+          </matrixrow>
+          <matrixcolumn>
+            <numeric ref="MQN" required="False" digits="10" decimal="2" from="" to="" unit="%" abbr="q1">
+              <label>Q1</label>
+              <hint />
+            </numeric>
+            <numeric ref="MQN" required="False" digits="10" decimal="2" from="" to="" unit="%" abbr="q2">
+              <label>Q2</label>
+              <hint />
+            </numeric>
+            <select1 ref="MQN" required="False" other="False" abbr="res">
+              <label>Result</label>
+              <hint />
+              <item>
+                <label>Pass</label>
+                <value>1</value>
+              </item>
+              <item>
+                <label>Fail</label>
+                <value>2</value>
+              </item>
+            </select1>
+          </matrixcolumn>
+        </matrix>
+      </controls>
+      <skip />
+    </module>
+    <logic></logic>
+  </fieldset>
+</questionnaire>
+
