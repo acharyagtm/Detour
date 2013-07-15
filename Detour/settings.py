@@ -1,5 +1,5 @@
 # Django settings for major_project project.
-import major_project
+import Detour
 import os
 
 DEBUG = True
@@ -104,10 +104,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'major_project.urls'
+ROOT_URLCONF = 'Detour.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'major_project.wsgi.application'
+WSGI_APPLICATION = 'Detour.wsgi.application'
 
 TEMPLATE_DIRS = (
     os.path.normpath(os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)), "templates")),

@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from major_project.views import hello, index, sms_submit, search, process_questionnaire_xml, process_SMS, write_XML,\
+from Detour.views import hello, index, sms_submit, search, process_questionnaire_xml, process_SMS, write_XML,\
     process_questionnaire_xml
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin

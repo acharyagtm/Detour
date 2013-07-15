@@ -11,7 +11,7 @@ import write_answer_XML
 import add_public_sms
 import os, sys
 from django.core.context_processors import request
-from major_project.add_public_sms import public_sms
+from Detour.add_public_sms import public_sms
 
 def index(request):
     #t = get_template("template1.html")
